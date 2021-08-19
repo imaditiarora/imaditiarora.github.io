@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>About Aditi Arora</title> <!--Page title-->
+        
+        <link rel="shortcut icon" href="assets/favicon.png" type="image/png"> <!--Favicon-->
+        
+        <!--Meta details for embeds-->
+        <meta property="og:title" content="About Aditi Arora">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://imaditiarora.github.io">
+        <meta property="og:image" content="assets/pic.png">
+        <meta property="og:description" content="I'm Aditi Arora, and this is all about me!">
+        <meta name="theme-color" content="#87ceeb">
+    </head>
+
+    <script>
+        var count = 0;
+        var text = 'Hi! I\'m Aditi Arora.'
+        function typeWriter() {
+            if (count < text.length) {
+                document.getElementById('title').innerHTML += text.charAt(count);
+                count++;
+                setTimeout(typeWriter, 60);
+            } else {
+                document.getElementById('title').innerHTML = '<b><u>Hi! I\'m Aditi Arora.'
+                document.getElementById('content').innerHTML = `
+Office professional by day, a mother and a dog owner by evening, and an independent, strong, dedicated and passionate woman throughout!
+<br><br>
+I've worked in many domains such as Investment Banking, Supply Chain and Airport / Aviation.<br>
+I'm also a seasoned Project and Program Management professional for engineering teams, using Scrum and Scaled Agile framework, 
+with over 16 years of diverse IT experience in work environments across four countries - India, France, United States and United Kingdom!<br><br>
+
+I'm negotiated through diverse points of view and organizational cultures. I have a demonstrated ability to plan, drive and manage large and complex deliveries, 
+with direct, virtual and global teams across the world.<br>
+I've conceptualized, designed and executed development and operational strategies that delivered improved productivity, enhanced customer satisfaction and accelerated business growth.<br>
+I've coached Agile, Scrum and DevOps while establishing best processes and practices leading to improved KPIs and team motivation.<br>
+I'm also a self-motivated strategic leader with a strong focus on delivery of high quality and large scalable applications using industry leading technologies.
+<br><br>
+I currently work at <a href="https://www.svb.com/">Silicon Valley Bank</a> as a project manager.<br>
+I've previously worked at many places like <a href="https://en.wikipedia.org/wiki/Finastra">Misys / Finastra</a> as an Associate Software Engineer,<br>
+<a href="https://www.societegenerale.com/en">Societé Generale Bank</a> in India and France as a Project Leader and IT Manager,<br>
+<a href="https://www.heathrow.com/">Heathrow Airport</a> with Capgemini at London,<br>
+<a href="https://www.airbus.com/">Airbus</a> with Capgemini,<br>
+and at <a href="https://www.cisco.com/c/en_in/index.html">Cisco</a> with Capgemini!
+<br><br>
+<b>Read more about me @ <a href="https://www.linkedin.com/in/aditiar0ra/">my LinkedIn</a>.</b>
+<br><br>
+My hobbies include taking my dog out for a walk, tasty food and of course binging Netflix :p
+<br><br>
+But enough about me :)<br>What about you? We all have a story of our own, and I'd love to hear yours! You can contact me using any of the links at the top of the page (Instagram, Facebook, LinkedIn).
+<br>Let's chat!
+`
+            }
+        }
+    </script>
+
+    <body onload="typeWriter()">
+        <!--Top navigation bar-->
+        <div class="top-navigation-bar">
+            <a href="https://www.linkedin.com/in/aditiar0ra/">LinkedIn</a>
+            <a href="https://www.instagram.com/the.dream.corner/">Instagram @ the.dream.corner</a>
+            <a href="https://www.facebook.com/aditi.arora.71">FaceBook</a>
+        </div>
+
+        <img src="assets/pic.png" alt="Profile Pic" class="profile-pic" width="300" height="250">
+
+        <p id="title" style="text-align: center;"></p>
+        <p id="content" style="text-align: center;"></p>
+    </body>
+
+    <style>
+        /* Background */
+        body {
+            background-color: black;
+        }
+
+        /* Profile picture */
+        .profile-pic {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border-radius: 50%;
+        }
+
+        /* Navbar */
+        .top-navigation-bar {
+            overflow: hidden;
+            background-color: black;
+            top: 0;
+            width: 100;
+        }
+        .top-navigation-bar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px 24px;
+            text-decoration: none;
+            font-size: 22px;
+            font-family:'Courier New', Courier, monospace;
+            transition: 0.3s;
+        }
+        .top-navigation-bar a:hover {
+            background-color: lightpink;
+            color: black;
+        }
+
+        /* Paragraphs */
+        #title {
+            color: lightpink;
+            font-size: 40px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #content {
+            color: lightpink;
+            font-size: 25px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* Hyperlinks */
+        a {
+            color: skyblue;
+        }
+    </style>
+
+</html>
